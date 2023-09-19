@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles/app.css">
+
+<body>
+    <script src="./scripts/handlers.js"></script>
+    <div class="container">
+        <img class="logo" src="https://sfo2.digitaloceanspaces.com/equo-cms/2020/08/28/5f495e535cda5Isotipo.png">
+        <h1>Welcome to your first Equo App</h1>
+        <p>For a guide and recipes on how to configure / customize an Equo App,
+            check out the <a href="https://docs.equo.dev/"> SDK documentation</a> .</p>
+        <h2>Useful Links</h2>
+        <div class="useful-links">
+            <div class="useful-minicard link" onClick="openDocumentation('https://docs.equo.dev/sdk/1.0.x/index-api-javascript.html')">
+                Javascript API documentation
+                <img class="arrow-icon"
+                src="./assets/arrow-icon.png" />
+            </div>
+            <div class="useful-minicard link" onClick="openDocumentation('https://docs.equo.dev/sdk/1.0.x/index-api-java.html')">
+                Java API Documentation
+                <img class="arrow-icon"
+                src="./assets/arrow-icon.png" />
+            </div>
+        </div>
+        <div class="useful-links">
+            <a class="useful-minicard link" href="https://docs.equo.dev/sdk/1.0.x/getting-started/creating.html">
+                Development guide
+                <img class="arrow-icon"
+                    src="./assets/arrow-icon.png" />
+            </a>
+        </div>
+
+        <h2>Test SDK Features</h2>
+        <div class="useful-links">
+            <div class="useful-minicard" onclick="sendWelcomeMessage()" >
+                Send message to Java
+                <img class="arrow-icon"
+                src="./assets/arrow-icon.png" />
+            </div>
+            <div class="useful-minicard" id="payload-holder" onclick="getExamplePayload()" >
+                Obtain payload from Java
+                <img class="arrow-icon"
+                src="./assets/arrow-icon.png" />
+            </div>
+        </div>
+
+        <h2>Ecosystem</h2>
+        <p>Learn about Equo <a href="https://equo.dev">here!</a> </p>
+    </div>
+
+
+</body>
+</html>
